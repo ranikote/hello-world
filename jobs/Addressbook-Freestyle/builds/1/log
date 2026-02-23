@@ -1,0 +1,46 @@
+Started by user [8mha:////4CIlnX6V4iT3wtg1zs1OhA0wKxa0q7s30La7Ycl9Z3fIAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyBEgZu/dLi1CL9xJTczDwAS4B5WsAAAAA=[0mBhagyashree Kote
+Running as SYSTEM
+Building on the built-in node in workspace /var/lib/jenkins/workspace/Addressbook-Freestyle
+The recommended git tool is: NONE
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/ranikote/addressbook.git
+ > git init /var/lib/jenkins/workspace/Addressbook-Freestyle # timeout=10
+Fetching upstream changes from https://github.com/ranikote/addressbook.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.43.0'
+ > git fetch --tags --force --progress -- https://github.com/ranikote/addressbook.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/ranikote/addressbook.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision 682dc7da397714f44ec0f80b71941b1309ed8795 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 682dc7da397714f44ec0f80b71941b1309ed8795 # timeout=10
+Commit message: "Update pom.xml"
+First time build. Skipping changelog.
+[Addressbook-Freestyle] $ /var/lib/jenkins/tools/hudson.tasks.Maven_MavenInstallation/maven-3.9.6/bin/mvn compile
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------< com.vaadin.tutorial:addressbook >-------------------
+[INFO] Building Vaadin Addressbook example 2.0
+[INFO]   from pom.xml
+[INFO] --------------------------------[ war ]---------------------------------
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ addressbook ---
+[INFO] skip non existing resourceDirectory /var/lib/jenkins/workspace/Addressbook-Freestyle/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.2:compile (default-compile) @ addressbook ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 4 source files to /var/lib/jenkins/workspace/Addressbook-Freestyle/target/classes
+[INFO] /var/lib/jenkins/workspace/Addressbook-Freestyle/src/main/java/com/vaadin/tutorial/addressbook/AddressbookUI.java: Some input files use or override a deprecated API.
+[INFO] /var/lib/jenkins/workspace/Addressbook-Freestyle/src/main/java/com/vaadin/tutorial/addressbook/AddressbookUI.java: Recompile with -Xlint:deprecation for details.
+[INFO] /var/lib/jenkins/workspace/Addressbook-Freestyle/src/main/java/com/vaadin/tutorial/addressbook/backend/ContactService.java: /var/lib/jenkins/workspace/Addressbook-Freestyle/src/main/java/com/vaadin/tutorial/addressbook/backend/ContactService.java uses unchecked or unsafe operations.
+[INFO] /var/lib/jenkins/workspace/Addressbook-Freestyle/src/main/java/com/vaadin/tutorial/addressbook/backend/ContactService.java: Recompile with -Xlint:unchecked for details.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  2.786 s
+[INFO] Finished at: 2026-01-28T22:26:45+05:30
+[INFO] ------------------------------------------------------------------------
+Finished: SUCCESS

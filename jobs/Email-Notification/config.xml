@@ -1,0 +1,70 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-definition plugin="workflow-job@1559.va_a_533730b_ea_d">
+  <actions>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobAction plugin="pipeline-model-definition@2.2277.v00573e73ddf1"/>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction plugin="pipeline-model-definition@2.2277.v00573e73ddf1">
+      <jobProperties/>
+      <triggers/>
+      <parameters/>
+      <options/>
+    </org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction>
+  </actions>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties/>
+  <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@4238.va_6fb_65c1f699">
+    <script>pipeline {
+    agent any
+
+    stages {
+        stage(&apos;Example Stage&apos;) {
+            steps {
+                echo &quot;Running pipeline...&quot;
+            }
+        }
+    }
+
+    post {
+        always {
+            script {
+                def jobName = env.JOB_NAME
+                def buildNumber = env.BUILD_NUMBER
+                def pipelineStatus = currentBuild.result ?: &apos;UNKNOWN&apos;
+                def bannerColor = pipelineStatus.toUpperCase() == &apos;SUCCESS&apos; ? &apos;green&apos; : &apos;red&apos;
+
+                def body = &quot;&quot;&quot;
+                &lt;html&gt;
+                &lt;body&gt;
+                    &lt;div style=&quot;border: 4px solid ${bannerColor}; padding: 10px;&quot;&gt;
+                        &lt;h2&gt;${jobName} - Build ${buildNumber}&lt;/h2&gt;
+                        &lt;div style=&quot;background-color: ${bannerColor}; padding: 10px;&quot;&gt;
+                            &lt;h3 style=&quot;color: white;&quot;&gt;
+                                Pipeline Status: ${pipelineStatus.toUpperCase()}
+                            &lt;/h3&gt;
+                        &lt;/div&gt;
+                        &lt;p&gt;
+                            Check the &lt;a href=&quot;${env.BUILD_URL}&quot;&gt;console output&lt;/a&gt;.
+                        &lt;/p&gt;
+                    &lt;/div&gt;
+                &lt;/body&gt;
+                &lt;/html&gt;
+                &quot;&quot;&quot;
+
+                emailext(
+                    subject: &quot;${jobName} - Build ${buildNumber} - ${pipelineStatus.toUpperCase()}&quot;,
+                    body: body,
+                    to: &apos;bhagya.kote@outlook.com&apos;,
+                    from: &apos;bhagya.kote@outlook.com&apos;,
+                    replyTo: &apos;bhagya.kote@outlook.com&apos;,
+                    mimeType: &apos;text/html&apos;
+                )
+            }
+        }
+    }
+}
+</script>
+    <sandbox>true</sandbox>
+  </definition>
+  <triggers/>
+  <disabled>false</disabled>
+</flow-definition>

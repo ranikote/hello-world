@@ -1,0 +1,47 @@
+Started by user [8mha:////4CIlnX6V4iT3wtg1zs1OhA0wKxa0q7s30La7Ycl9Z3fIAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyBEgZu/dLi1CL9xJTczDwAS4B5WsAAAAA=[0mBhagyashree Kote
+[Fri Jan 23 13:07:03 IST 2026] Starting branch indexing...
+ > git --version # timeout=10
+ > git --version # 'git version 2.43.0'
+ > git ls-remote --symref -- https://github.com/ranikote/Boardgame.git # timeout=10
+ > git rev-parse --resolve-git-dir /var/lib/jenkins/caches/git-e89d7007cf7dd40e9a235f2665628901/.git # timeout=10
+Setting origin to https://github.com/ranikote/Boardgame.git
+ > git config remote.origin.url https://github.com/ranikote/Boardgame.git # timeout=10
+Fetching & pruning origin...
+Listing remote references...
+ > git config --get remote.origin.url # timeout=10
+ > git --version # timeout=10
+ > git --version # 'git version 2.43.0'
+ > git ls-remote -h -- https://github.com/ranikote/Boardgame.git # timeout=10
+Fetching upstream changes from origin
+ > git config --get remote.origin.url # timeout=10
+ > git fetch --no-tags --force --progress --prune -- origin +refs/heads/*:refs/remotes/origin/* # timeout=10
+Checking branches...
+  Checking branch feature2
+      ‘Jenkinsfile’ not found
+    Does not meet criteria
+  Checking branch feature1
+      ‘Jenkinsfile’ found
+    Met criteria
+No changes detected: feature1 (still at 53182b000bed9f70bc1492ff9d0c4abbdc3da3ff)
+  Checking branch qa
+      ‘Jenkinsfile’ found
+    Met criteria
+No changes detected: qa (still at 53182b000bed9f70bc1492ff9d0c4abbdc3da3ff)
+  Checking branch main
+      ‘Jenkinsfile’ found
+    Met criteria
+No changes detected: main (still at 53182b000bed9f70bc1492ff9d0c4abbdc3da3ff)
+  Checking branch feature4
+      ‘Jenkinsfile’ not found
+    Does not meet criteria
+  Checking branch dev
+      ‘Jenkinsfile’ found
+    Met criteria
+No changes detected: dev (still at 53182b000bed9f70bc1492ff9d0c4abbdc3da3ff)
+  Checking branch feature3
+      ‘Jenkinsfile’ found
+    Met criteria
+No changes detected: feature3 (still at 53182b000bed9f70bc1492ff9d0c4abbdc3da3ff)
+Processed 7 branches
+[Fri Jan 23 13:07:05 IST 2026] Finished branch indexing. Indexing took 2.5 sec
+Finished: SUCCESS

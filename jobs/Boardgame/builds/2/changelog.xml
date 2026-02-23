@@ -1,0 +1,81 @@
+commit 6c317e11d1e7a71f0f61bce88887f2ceef8efcc0
+tree 6d0be17b0ac8aaf4f9eb5de6a5df2ee3206a08e7
+parent 61c62958fca3bbbfc7abf822b80f989a8132be61
+author ranikote <106727161+ranikote@users.noreply.github.com> 2026-01-31 17:56:03 +0530
+committer GitHub <noreply@github.com> 2026-01-31 17:56:03 +0530
+
+    Update Dockerfile
+
+:100644 100644 179f67d621383847e0bdc12df5b978d07763552a 31043d531954d9ba48ab247f4cf4a7eff8f48be6 M	Dockerfile
+commit 61c62958fca3bbbfc7abf822b80f989a8132be61
+tree 535fd88a0a5f20a46d5632e287c30d4f8df7719b
+parent b0fcedf3ab4fd7130b024e9fea22a442dc63df1c
+author ranikote <106727161+ranikote@users.noreply.github.com> 2026-01-31 17:35:29 +0530
+committer GitHub <noreply@github.com> 2026-01-31 17:35:29 +0530
+
+    Update Dockerfile
+
+:100644 100644 c717f3d912cbe9948b8313354cb9a8219ab3eaaa 179f67d621383847e0bdc12df5b978d07763552a M	Dockerfile
+commit b0fcedf3ab4fd7130b024e9fea22a442dc63df1c
+tree 9e542542ba514bd1202c5e1d876fda3cd3dcb87d
+parent 08c0dd8aebcf8c1470cbfc5cf8a674a7885c278c
+author ranikote <106727161+ranikote@users.noreply.github.com> 2026-01-29 17:05:04 +0530
+committer GitHub <noreply@github.com> 2026-01-29 17:05:04 +0530
+
+    Update Jenkinsfile-bhagya
+
+:100644 100644 4bebd1994129abc9b842a06acd26fc2a482e9ec3 e882c632f423778da6c8e24f06af4a3f89973424 M	Jenkinsfile-bhagya
+commit 08c0dd8aebcf8c1470cbfc5cf8a674a7885c278c
+tree 30d73b480dc239d3967c547f02b15ac3e2ac5253
+parent 487a08cdd98475e325fb02bad494d4d996a89ef3
+author ranikote <106727161+ranikote@users.noreply.github.com> 2026-01-29 17:04:24 +0530
+committer GitHub <noreply@github.com> 2026-01-29 17:04:24 +0530
+
+    Update Jenkinsfile-bhagya
+
+:100644 100644 b40b3b01d44613d6516da7e2101a60f2f4923589 4bebd1994129abc9b842a06acd26fc2a482e9ec3 M	Jenkinsfile-bhagya
+commit 487a08cdd98475e325fb02bad494d4d996a89ef3
+tree 27290a9d37fc42384c049fd99edda3d7cbdb216c
+parent 5adeec9081fea844ef4cd82573b647dd2eb3143f
+author ranikote <106727161+ranikote@users.noreply.github.com> 2026-01-29 17:03:11 +0530
+committer GitHub <noreply@github.com> 2026-01-29 17:03:11 +0530
+
+    Update and rename Jenkinsfile to Jenkinsfile-bhagya
+
+:100644 100644 06c9a4292b4cef71b57b136a78fac7485419ef25 b40b3b01d44613d6516da7e2101a60f2f4923589 R074	Jenkinsfile	Jenkinsfile-bhagya
+commit 5adeec9081fea844ef4cd82573b647dd2eb3143f
+tree e4bff81b7c0ef2a951bd8fb1eaaaade718352198
+parent 5689b7602f6c62ac19f2f0e644540824bbb609e9
+author ranikote <106727161+ranikote@users.noreply.github.com> 2026-01-29 16:56:23 +0530
+committer GitHub <noreply@github.com> 2026-01-29 16:56:23 +0530
+
+    Fix Maven version formatting in Jenkinsfile
+
+:100644 100644 75b8fd41b66517a7a17c606507f154e8d0e55d24 06c9a4292b4cef71b57b136a78fac7485419ef25 M	Jenkinsfile
+commit 5689b7602f6c62ac19f2f0e644540824bbb609e9
+tree fd5b9ac293a86f939a2f070d4037e5b3341eab71
+parent 7db4b9fd286dc6ea4a003a36118a03110a764276
+author ranikote <106727161+ranikote@users.noreply.github.com> 2026-01-29 16:55:28 +0530
+committer GitHub <noreply@github.com> 2026-01-29 16:55:28 +0530
+
+    Update Jenkinsfile
+
+:100644 100644 946ca0f4630bbfd60edcf2d82782744f8f8c7278 75b8fd41b66517a7a17c606507f154e8d0e55d24 M	Jenkinsfile
+commit 7db4b9fd286dc6ea4a003a36118a03110a764276
+tree 5fbc9cacf4b36287301d76ab8880692823ef5ce9
+parent 53182b000bed9f70bc1492ff9d0c4abbdc3da3ff
+author ranikote <106727161+ranikote@users.noreply.github.com> 2026-01-29 16:54:17 +0530
+committer GitHub <noreply@github.com> 2026-01-29 16:54:17 +0530
+
+    Update Jenkinsfile
+
+:100644 100644 98841fb55e07748bf346d8720da6ea2300b74d64 946ca0f4630bbfd60edcf2d82782744f8f8c7278 M	Jenkinsfile
+commit 53182b000bed9f70bc1492ff9d0c4abbdc3da3ff
+tree 180302d8d5001cabe420e4437e7fcc020c6cc4da
+parent 090cc3bcaf431a00ee3f954b295458b22f1d688e
+author ranikote <106727161+ranikote@users.noreply.github.com> 2026-01-22 18:11:40 +0530
+committer GitHub <noreply@github.com> 2026-01-22 18:11:40 +0530
+
+    Update Jenkinsfile
+
+:100644 100644 1593917aaf3823698147ae5b3d188c91de598a07 98841fb55e07748bf346d8720da6ea2300b74d64 M	Jenkinsfile
